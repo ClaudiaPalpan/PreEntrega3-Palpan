@@ -1,0 +1,52 @@
+footer{
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        .footer-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: white;
+                padding: 10px;
+                font-weight: 900;   
+                font-size: 15px; 
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        p{
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            padding-top: 20px;
+            text-align: center;
+        }
+    }
+}
+.redes-sociales{
+    padding: 20px;
+    a{
+        padding: 10px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.atencion-cliente{
+    a{
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}

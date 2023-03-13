@@ -1,0 +1,38 @@
+.main-catalogo{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "carrusel"
+    "categoria"
+    "productos";
+    .carrusel{
+        grid-area: carrusel;
+        .slide{
+            img{
+                height: 35vh;
+            }
+        }
+    }
+    .categoria{
+        grid-area: categoria;
+        p{
+            font-weight: 900;
+            padding: 20px;
+            font-size: 20px;
+        }
+        .cat-opciones{
+            display: flex;
+            flex-wrap: wrap;   
+        }
+    }
+    .productos{
+        grid-area: productos;
+        p {
+            font-weight: 900;
+            padding: 20px;
+            font-size: 20px;
+        }
+    }
+}

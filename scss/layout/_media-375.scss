@@ -1,0 +1,30 @@
+@media (max-width: 375px){
+    /*----inicio-main----*/
+    .main-inicio{
+        height: auto;
+        grid-template: repeat(2,275px)/repeat(1,375px);
+        grid-template-areas: "imagen1" "imagen2";
+    }
+    /*----ayuda-main----*/
+    .main-ayuda{
+        .section-ayuda{
+            .container-ayuda{
+                .card a:hover{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    /*----sesion-main----*/
+    .main-sesion{
+        section{
+            padding: 70px;
+            div{
+                .form-sesion{
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}

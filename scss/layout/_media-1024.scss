@@ -1,0 +1,44 @@
+@media (max-width: 1024px){
+    /*----inicio-main----*/ 
+    .main-inicio{
+        .imagen1{
+            padding-top: 360px;
+        }
+        .imagen2{
+            padding-top: 360px;
+        }
+    }
+
+    /*----ayuda-main----*/
+    .card{
+        background-color: rgba(255, 255, 255, 0.664);
+    }
+    /*----contacto-main----*/
+    .main-contacto{
+        section{
+            .form-contacto{
+                width: 70%;
+                padding-left: 280px;
+                padding-top: 40px;
+            }
+        }
+    }
+
+    /*----sesion-main----*/
+    .main-sesion section{
+        padding-top: 250px;
+    }
+    /*-----tienda-main----*/
+    .main-tienda{
+        height: 642px;
+        section{
+            div{
+                iframe{
+                    width: 400px;
+                    height: 250px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

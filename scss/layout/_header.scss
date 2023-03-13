@@ -1,0 +1,30 @@
+header{
+    padding: 15px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 900;
+                font-size: 30px;
+            }
+        }
+        .opciones{
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 20px;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    } 
+}

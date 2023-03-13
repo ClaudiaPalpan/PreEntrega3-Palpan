@@ -1,0 +1,46 @@
+.main-ayuda{
+    width: 100%;
+    height: 730px;
+    background-image: url(../assets/img/img4.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    .section-ayuda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            color: aliceblue;
+            font-weight: 900;
+            padding: 70px;
+        }
+        .container-ayuda{
+            display: grid;
+            grid-template: repeat(2,150px)/ repeat(3,190px);
+            gap: 70px;
+            justify-content: center;
+            align-content: center;
+            .card{
+                background-color: rgba(255, 255, 255, 0.829);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                    background-color: rgb(92, 92, 92);
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 900;
+                    text-align: center;
+                    &:hover{
+                        font-size: 20px;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

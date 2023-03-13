@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.main-catalogo {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "carrusel" "categoria" "productos"; }
+  .main-catalogo .carrusel {
+    grid-area: carrusel; }
+    .main-catalogo .carrusel .slide img {
+      height: 35vh; }
+  .main-catalogo .categoria {
+    grid-area: categoria; }
+    .main-catalogo .categoria p {
+      font-weight: 900;
+      padding: 20px;
+      font-size: 20px; }
+    .main-catalogo .categoria .cat-opciones {
+      display: flex;
+      flex-wrap: wrap; }
+  .main-catalogo .productos {
+    grid-area: productos; }
+    .main-catalogo .productos p {
+      font-weight: 900;
+      padding: 20px;
+      font-size: 20px; }
+
+header {
+  padding: 15px; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container .logo a {
+      text-decoration: none;
+      color: black;
+      font-weight: 900;
+      font-size: 30px; }
+    header .container .opciones ul {
+      display: flex;
+      list-style: none;
+      gap: 20px; }
+      header .container .opciones ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 900; }
+
+.main-inicio {
+  display: grid;
+  width: 100%;
+  height: 800px;
+  grid-template: repeat(1, 800px)/repeat(2, 1fr);
+  grid-template-areas: "imagen1 imagen2"; }
+  .main-inicio .imagen1 {
+    grid-area: imagen1;
+    background-image: url(../assets/img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 35%; }
+    .main-inicio .imagen1 a {
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 40px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.473); }
+      .main-inicio .imagen1 a:hover {
+        font-size: 60px;
+        text-decoration: underline; }
+  .main-inicio .imagen2 {
+    grid-area: imagen2;
+    background-image: url(../assets/img/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 35%; }
+    .main-inicio .imagen2 a {
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 40px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.473); }
+      .main-inicio .imagen2 a:hover {
+        font-size: 60px;
+        text-decoration: underline; }
+
+.main-ayuda {
+  width: 100%;
+  height: 730px;
+  background-image: url(../assets/img/img4.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8; }
+  .main-ayuda .section-ayuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-ayuda .section-ayuda h2 {
+      color: aliceblue;
+      font-weight: 900;
+      padding: 70px; }
+    .main-ayuda .section-ayuda .container-ayuda {
+      display: grid;
+      grid-template: repeat(2, 150px)/repeat(3, 190px);
+      gap: 70px;
+      justify-content: center;
+      align-content: center; }
+      .main-ayuda .section-ayuda .container-ayuda .card {
+        background-color: rgba(255, 255, 255, 0.829);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .main-ayuda .section-ayuda .container-ayuda .card:hover {
+          background-color: #5c5c5c; }
+        .main-ayuda .section-ayuda .container-ayuda .card a {
+          text-decoration: none;
+          color: black;
+          font-weight: 900;
+          text-align: center; }
+          .main-ayuda .section-ayuda .container-ayuda .card a:hover {
+            font-size: 20px;
+            text-decoration: underline; }
+
+.main-contacto {
+  width: 100%;
+  height: 730px;
+  background-image: url(../assets/img/img8.jpg);
+  background-position: 50% 55%;
+  background-size: cover;
+  opacity: 0.8; }
+  .main-contacto section {
+    padding: 25px;
+    text-align: center; }
+    .main-contacto section h2 {
+      font-weight: 900;
+      padding-bottom: 20px; }
+    .main-contacto section p {
+      padding: 20px; }
+    .main-contacto section .form-contacto {
+      width: 70%;
+      padding-left: 560px;
+      padding-top: 40px; }
+      .main-contacto section .form-contacto fieldset .recuadros {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-weight: 900; }
+
+.main-sesion {
+  width: 100%;
+  height: 730px;
+  background-image: url(../assets/img/img6.jpg);
+  background-position: 50% 55%;
+  background-size: cover;
+  opacity: 0.8; }
+  .main-sesion section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 200px; }
+    .main-sesion section div {
+      padding: 10px; }
+      .main-sesion section div h3 {
+        padding-left: 10px; }
+      .main-sesion section div .form-sesion {
+        width: 70%;
+        padding-top: 40px;
+        text-align: center; }
+      .main-sesion section div .no-cuenta {
+        padding-bottom: 50px; }
+      .main-sesion section div .btn-registrar {
+        padding-left: 55px;
+        padding-right: 55px;
+        position: relative;
+        left: 10px; }
+
+.main-tienda {
+  width: 100%;
+  height: 730px;
+  background-image: url(../assets/img/img5.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8; }
+  .main-tienda section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 35px; }
+    .main-tienda section h2 {
+      font-weight: 900; }
+    .main-tienda section div iframe {
+      padding: 30px; }
+    .main-tienda section div p {
+      text-align: center;
+      padding: 10px;
+      font-weight: bold; }
+
+footer {
+  padding: 10px;
+  width: 100%;
+  background-color: black; }
+  footer section {
+    display: flex;
+    justify-content: space-evenly; }
+    footer section .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      footer section .footer-container h2 {
+        color: white;
+        padding: 10px;
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center; }
+      footer section .footer-container a {
+        text-decoration: none; }
+    footer section p {
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      padding-top: 20px;
+      text-align: center; }
+
+.redes-sociales {
+  padding: 20px; }
+  .redes-sociales a {
+    padding: 10px; }
+    .redes-sociales a img {
+      width: 30px;
+      height: 30px; }
+
+.atencion-cliente a {
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px; }
+
+@media (max-width: 1024px) {
+  /*----inicio-main----*/
+  .main-inicio .imagen1 {
+    padding-top: 360px; }
+  .main-inicio .imagen2 {
+    padding-top: 360px; }
+  /*----ayuda-main----*/
+  .card {
+    background-color: rgba(255, 255, 255, 0.664); }
+  /*----contacto-main----*/
+  .main-contacto section .form-contacto {
+    width: 70%;
+    padding-left: 280px;
+    padding-top: 40px; }
+  /*----sesion-main----*/
+  .main-sesion section {
+    padding-top: 250px; }
+  /*-----tienda-main----*/
+  .main-tienda {
+    height: 642px; }
+    .main-tienda section div iframe {
+      width: 400px;
+      height: 250px;
+      padding: 20px; } }
+
+@media (max-width: 768px) {
+  /*----header-----*/
+  header {
+    background-color: rgba(158, 158, 158, 0.37); }
+    header .container .logo a {
+      font-size: 25px; }
+    header .container .opciones ul li a {
+      font-size: 15px; }
+  /*-----footer----*/
+  footer {
+    padding: 10px;
+    width: 100%;
+    background-color: black; }
+    footer section .footer-container h2 {
+      font-size: 15px; }
+  .atencion-cliente a {
+    font-size: 13px; }
+  /*----inicio-main----*/
+  .main-inicio {
+    height: 580px;
+    grid-template: repeat(2, 290px)/repeat(1, 1fr);
+    grid-template-areas: "imagen1" "imagen2"; }
+    .main-inicio .imagen1 {
+      padding: 120px; }
+      .main-inicio .imagen1 a {
+        font-size: 30px; }
+    .main-inicio .imagen2 {
+      padding: 120px; }
+      .main-inicio .imagen2 a {
+        font-size: 30px; }
+  /*----ayuda-main----*/
+  .main-ayuda {
+    height: 580px; }
+    .main-ayuda .section-ayuda h2 {
+      padding: 40px; }
+    .main-ayuda .section-ayuda .container-ayuda {
+      grid-template: repeat(3, 120px)/repeat(2, 160px);
+      gap: 40px; }
+  /*----contacto-main----*/
+  .main-contacto section .form-contacto {
+    width: 70%;
+    padding-left: 200px;
+    padding-top: 40px; }
+  /*-----tienda-main----*/
+  .main-tienda {
+    height: 650px; }
+    .main-tienda section {
+      padding: 15px;
+      padding-top: 30px; }
+      .main-tienda section h2 {
+        padding-bottom: 50px; }
+      .main-tienda section div iframe {
+        width: 300px;
+        height: 250px;
+        padding: 10px; } }
+
+@media (max-width: 425px) {
+  /*----header-----*/
+  header {
+    background-color: black; }
+    header .container {
+      flex-direction: column; }
+      header .container .logo {
+        padding-bottom: 20px; }
+        header .container .logo a {
+          font-size: 25px;
+          color: white; }
+      header .container .opciones ul {
+        flex-direction: column;
+        align-items: center; }
+        header .container .opciones ul li a {
+          font-size: 15px;
+          color: white; }
+          header .container .opciones ul li a img {
+            background-color: white; }
+  /*-----footer----*/
+  footer section {
+    flex-direction: column; }
+    footer section .footer-container h2 {
+      font-size: 14px; }
+  .redes-sociales a img {
+    width: 25px;
+    height: 25px; }
+  /*----ayuda-main----*/
+  .card a:hover {
+    font-size: 18px; }
+  /*----contacto-main----*/
+  .main-contacto {
+    height: 600px; }
+    .main-contacto section {
+      padding-bottom: 20px;
+      text-align: center; }
+      .main-contacto section .form-contacto {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px; }
+  /*----sesion-main----*/
+  .main-sesion {
+    width: 100%;
+    height: auto; }
+    .main-sesion section {
+      display: flex;
+      flex-direction: column;
+      padding: 100px; }
+      .main-sesion section div {
+        text-align: center;
+        align-content: center; }
+        .main-sesion section div h3 {
+          padding-left: 0px; }
+        .main-sesion section div .form-sesion {
+          padding-top: 0px;
+          padding-bottom: 20px;
+          padding-left: 10px;
+          text-align: center; }
+        .main-sesion section div .no-cuenta {
+          padding-bottom: 0px; }
+        .main-sesion section div .btn-registrar {
+          padding: 0px; }
+  /*-----tienda-main----*/
+  .main-tienda {
+    height: 550px; }
+    .main-tienda section {
+      padding: 15px;
+      padding-bottom: 5px; }
+      .main-tienda section h2 {
+        padding-bottom: 20px;
+        font-size: 20px; }
+      .main-tienda section div iframe {
+        width: 350px;
+        height: 150px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-bottom: 20px; }
+      .main-tienda section div p {
+        text-align: center;
+        padding: 3px;
+        font-weight: 900;
+        font-size: 14px; } }
+
+@media (max-width: 390px) {
+  /*----header-----*/
+  header .container .logo a {
+    font-size: 20px;
+    color: white; }
+  header .container .opciones ul li a {
+    font-size: 13px;
+    color: white; }
+  /*----inicio-main----*/
+  .main-inicio {
+    height: 550px;
+    grid-template: repeat(2, 275px)/repeat(1, 390px);
+    grid-template-areas: "imagen1" "imagen2"; }
+  /*----ayuda-main----*/
+  .main-ayuda {
+    height: 550px; }
+    .main-ayuda .section-ayuda h2 {
+      padding: 20px;
+      font-size: 18px; }
+    .main-ayuda .section-ayuda .container-ayuda {
+      grid-template: repeat(6, 60px)/repeat(1, 130px);
+      gap: 20px; }
+      .main-ayuda .section-ayuda .container-ayuda .card a {
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+        font-size: 13px;
+        text-align: center; }
+  /*-----tienda-main----*/
+  .main-tienda {
+    height: 550px; }
+    .main-tienda section {
+      padding: 15px;
+      padding-bottom: 5px; }
+      .main-tienda section h2 {
+        font-size: 18px; }
+      .main-tienda section div iframe {
+        width: 250px;
+        height: 150px;
+        padding: 5px;
+        padding-left: 10px; }
+      .main-tienda section div p {
+        text-align: center;
+        padding: 3px;
+        font-weight: 500;
+        font-size: 14px; } }
+
+@media (max-width: 375px) {
+  /*----inicio-main----*/
+  .main-inicio {
+    height: auto;
+    grid-template: repeat(2, 275px)/repeat(1, 375px);
+    grid-template-areas: "imagen1" "imagen2"; }
+  /*----ayuda-main----*/
+  .main-ayuda .section-ayuda .container-ayuda .card a:hover {
+    font-size: 15px; }
+  /*----sesion-main----*/
+  .main-sesion section {
+    padding: 70px; }
+    .main-sesion section div .form-sesion {
+      padding-left: 15px; } }
+
+@media (max-width: 320px) {
+  /*----inicio-main----*/
+  .main-inicio {
+    height: 550px;
+    grid-template: repeat(2, 275px)/repeat(1, 320px);
+    grid-template-areas: "imagen1" "imagen2"; }
+  /*----sesion-main----*/
+  .main-sesion section {
+    padding: 50px; } }

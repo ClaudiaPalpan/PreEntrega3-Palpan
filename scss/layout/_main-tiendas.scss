@@ -1,0 +1,27 @@
+.main-tienda{
+    width: 100%;
+    height: 730px;
+    background-image: url(../assets/img/img5.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly; 
+        padding: 35px;
+        h2{
+            font-weight: 900;
+        }
+        div{
+            iframe{
+                padding: 30px;
+            }
+            p{
+                text-align: center;
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+}

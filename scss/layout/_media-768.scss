@@ -1,0 +1,99 @@
+@media (max-width: 768px){
+    /*----header-----*/
+    header{
+        background-color: rgba(158, 158, 158, 0.37);
+        .container{
+            .logo{
+                    a{
+                        font-size: 25px;
+                    }
+            }
+            .opciones{
+                ul{
+                    li{
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    /*-----footer----*/
+    footer{
+        padding: 10px;
+        width: 100%;
+        background-color: black;
+        section{
+            .footer-container{
+                h2{
+                    font-size: 15px; 
+                }
+            }
+        }
+    }
+    .atencion-cliente{
+        a{
+            font-size: 13px;
+        }
+    }
+    /*----inicio-main----*/
+    .main-inicio{
+        height: 580px;
+        grid-template: repeat(2,290px)/repeat(1,1fr);
+        grid-template-areas: "imagen1" "imagen2";
+        .imagen1{
+            padding: 120px;
+            a{
+                font-size: 30px;
+            }
+        }
+        .imagen2{
+            padding: 120px;
+            a{
+                font-size: 30px;
+            }
+        }
+    }
+    /*----ayuda-main----*/
+    .main-ayuda{
+        height: 580px;
+        .section-ayuda{
+            h2{
+                padding: 40px;
+            } 
+            .container-ayuda{
+                grid-template: repeat(3,120px)/ repeat(2,160px);
+                gap: 40px;
+            }      
+        }
+    }
+    /*----contacto-main----*/
+    .main-contacto{
+        section{
+            .form-contacto{
+                width: 70%;
+                padding-left: 200px;
+                padding-top: 40px;
+            }
+        }
+    }
+    /*-----tienda-main----*/
+    .main-tienda{
+        height: 650px;
+        section{
+            padding: 15px;
+            padding-top: 30px;
+            h2{
+                padding-bottom: 50px;
+            }
+            div{
+                iframe{
+                    width: 300px;
+                    height: 250px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

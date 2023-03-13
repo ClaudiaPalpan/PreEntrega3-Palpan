@@ -1,0 +1,12 @@
+@media (max-width: 320px){
+    /*----inicio-main----*/
+    .main-inicio{
+        height: 550px;
+        grid-template: repeat(2,275px)/repeat(1,320px);
+        grid-template-areas: "imagen1" "imagen2";
+    }
+    /*----sesion-main----*/
+    .main-sesion section{
+        padding: 50px;
+    }
+}
